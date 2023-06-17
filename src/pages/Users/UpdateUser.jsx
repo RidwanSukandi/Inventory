@@ -18,7 +18,7 @@ const updateUsers = () => {
 
   const userById = async () => {
     await axios
-      .get(`http://localhost:4000/api/user/${id.id}`)
+      .get(`https://backend-inventori.vercel.app/api/user/${id.id}`)
       .then((response) => {
         console.log(response.data.data);
         setUpdate(response.data.data);
